@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="desktop.css">
+    <link rel="stylesheet" href="mobile-upright.css">
+    <link rel="icon" href="images/logos/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Blackout Booking Management</title>
+</head>
+<body>
+    <div id="customAlert">
+        <div id="custom-alert-box">
+            <div id="custom-alert-box-text">
+                
+            </div>
+            <button id="custom-alert-close" onclick="hideAlert()">NICE</button>
+            
+        </div>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <div class="bear-container">
+                <img src="images/logos/headphonesgreen.png" class="bearwhite">
+            </div>
+            <div class="buttons">
+                <button id="about-button">ABOUT</button>
+                <button id="values-button">FOTOS</button>
+                <button id="inquiries-button">PARTY</button>
+                <button id="contact-button">CONTACT</button>
+                
+                
+            </div>
+        </div>
+        <img src="images/logos/logocapital.png" class="background-logo-phone">
+        
+        <div class="main">
+            <img src="images/logos/logocapital.png" class="background-logo">
+            
+            <a href="https://www.instagram.com/blackoutbookingmgmt/">
+                <img src="images/ig logo maybe.png" class="iglogo">
+            </a>
+            
+            <div class="main-header">
+                
+            </div>
+            <div class="texts">
+                <div class='hidden' id="about-section">
+                    
+                    <h3><br>Capital Beats Entertainment is about gettin the party bumpin, anytime, anywhere. A
+                    great man once said "here's to havin' a good time, all the time" -- at CBE, we don't fuck
+                    around. Your wedding's gonna be lit. Your bar mitzvah? We're gonna make you a man,
+                    akhi. Your granny's 90th? The Lord Jesus Christ must be in the room cause she's gonna
+                    be up outta that wheelchair, hoppin on tabletops, rappin like this was an 80s movie.<br><br>
+                    Don't be foolish. A party isn't just a party. A party is the rebirth of the fuckin cosmos, if you 
+                    know what you're doing. And we do know what we're doing. Your regional management conference is gonna 
+                    go so fuckin hard your stock value is gonna look like a graph of CO2 emissions. Let's heat this bitch up!</h3>
+
+                </div>
+                
+                <div class="hidden" id="values-section">
+                    <div id="values-text">
+                        <h1>bruh look at these satisfied-ass customers</h1><h2>are you gettin in on this
+                            or are you a loser nerd
+                        </h2><br>
+                        <img class='customer' src="images/customers/whitegirls.jpg"><br><br>
+                        <img class='customer' src="images/customers/blackgirls.jpg"><br><br>
+                        <img class='customer' src="images/customers/kayleen.jpg"><br><br>
+                        <img class='customer' src="images/customers/whitegirls3.jpg"><br><br>
+                        <img class='customer' src="images/customers/whiteboys.jpg"><br><br>
+                        <img class='customer' src="images/customers/whitegirls2.jpg"><br><br>
+                        
+                        <img class='customer' src="images/customers/laptop.jpg"><br><br>
+                        
+                    </div>
+
+                </div>
+                <div class="hidden" id="inquiries-section">
+                    <div><h1>HELLLLLLL YEAH YOU MADE IT</h1>
+                        <h2>LET'S FUCKING GOOOOOOOOOOO</h2>
+                        <form id="inquiry-form" style="justify-self: center;" method="POST">
+                            <input type="hidden" name="access_key" value="f41b34a7-f5d9-4cab-8317-d9257dca387c">
+                            <input type="hidden" name="subject" value="Someone new is looking to Blackout!">
+                            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                            <h4>Who are you:</h4>
+                                    <input type="text" id="nameInput" name="name" placeholder="Just a party spirit in a meat suit">
+                            <br><br><h4>Email:</h4>
+                                    <input type="text" id="emailInput" name="email" placeholder="andrewwkreincarnated@gmail.com">
+                            <br><br><h4>Tell us everything:</h4>
+                                <input type="text" id="anythingElseInput" name="anything-else" placeholder="let's get this bitch bumpin">
+                                    <br><br><br><h4>And one more thing:</h4>
+                                    <div class="h-captcha" data-captcha="true"></div>
+                            
+                                    <button type="submit" value="submit" id="submit">SUBMIT</button>
+                                
+
+                        </form>
+                    </div>
+                </div>
+                <div class="hidden" id="contact-section">
+                    <h2>Contact: DJ Hannah</h2>
+                        <img src="images/hannah.jpg" id="hannah">
+                        <br><br><a class="contact-links" href="mailto:capitalbeatsentertainment@gmail.com">capitalbeatsentertainment@gmail.com</a>
+                        <br><br><a class="contact-links" href="tel:+8038062203">803-806-2203</a>
+                        <br><br><a class="contact-links" href="https://www.instagram.com/capitalbeatsentertainment">@capitalbeatsentertainment</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p class="left"> ©2024 CBE</p>
+            <p class="right"> site:PokeTheBear©2024</p>
+        </div> 
+        <div class="footer-text-container">
+            <p class="left-phone"> CBE<br>©2024</p>
+            <a href="https://www.instagram.com/blackoutbookingmgmt/">
+                <img src="images/ig logo maybe2.png" class="iglogophone"></a>
+            <p class="right-phone"> PTB<br>©2024</p>
+        </div>
+        
+    </footer>
+    
+ 
+
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<!--script src="https://js.hcaptcha.com/1/api.js" async defer-->
+
+
+<script src="desktop.js" defer></script>
+<script src="alert.js"></script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,461 @@
+/* { border: 1px solid black; }*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #411a6d;   
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 93vh; 
+    transition: background-color 3s ease;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   margin-top: 7vh;
+   padding: 0;
+   transition: opacity 3s ease;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    opacity: .6;
+    margin: 0;
+    padding: 0;
+}
+#logo-phone {
+    display: none;
+}
+
+#logo {
+    width: 97%;
+    /*filter: drop-shadow(0 0 5px #ffffff54);*/
+    margin: 0;
+    padding: 0;
+}
+
+.bear {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    padding-top: 4vh;
+}
+#bear {
+    width: 320px;
+    /*filter: drop-shadow(0 0 10px #ffffff);*/
+    margin: 0;
+    padding: 0;
+}
+
+.footer-desktop {
+    display: none;
+}
+
+.footer-phone {
+    position: fixed;
+    display: flex;
+    align-self: flex-end;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 104%;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color:rgba(255, 255, 255, 0.314); 
+    transition: opacity 3s ease;
+    padding-right: 4vw;
+    padding-left: 4vw;
+    padding-bottom: 1vh;
+}
+
+.left-phone {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    text-align: left;
+}
+
+.right-phone {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    text-align: right;
+}
+
+@media screen and (orientation: landscape) and (hover: none) {
+    body {
+        height: 100vh; /* Set height to viewport height */
+        overflow: visible;
+    }
+
+    .container {
+        margin-top: 0;
+    }
+
+    .logo {
+        position: fixed;
+        z-index: -100;
+        bottom: 13vw;
+        width: 100%;
+    }
+    #logo {
+        width: 100%;
+    }
+
+    #bear {
+        width: 35%;
+        height: auto;
+        position: fixed;
+        z-index: 100;
+        top: 7vw;
+    }
+
+    .footer-text-container {
+        padding-bottom: 2vh;
+    }
+
+}
+
+@media (min-width: 800px) {
+    .container {
+        max-width: 1016px;
+        margin: 0 auto;
+        margin-top: 7vh;
+       
+    }
+
+    .footer-phone {
+        display: none !important;
+    }
+    .footer-desktop {
+        display: flex !important;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        max-width: 100vw;
+        height: 6%;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+        transition: opacity 3s ease;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        color:rgba(255, 255, 255, 0.314); 
+        font-family:'Courier New', Courier, monospace;
+        font-size: 14px;
+        filter: drop-shadow(0 0 1px #ffffff56);
+        transition: opacity 3s ease;
+        margin: 0;
+        padding: 0;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .right {
+        justify-self: flex-end;
+        text-align: right;
+    } 
+    
+    .left {
+        text-align: left;
+    }
+
+    #bear {
+        width: 75%;
+        height: auto;
+    }
+    
+   
+}
+
+
+/*
+.footer-desktop {
+    
+}
+
+
+
+.footer-text-container {
+    display: none;
+}
+
+.right {
+    text-align: right;
+} 
+
+.left {
+    text-align: right;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none; 
+    transition: background-color 3s ease;
+    pointer-events: none;
+    z-index: 999;
+}
+
+#logo-phone, .logo-phone {
+    display: none;
+}*/
+
+
+
+/**@media (min-width: 840px) {
+    .logo, .bear {
+      max-width: 95%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .glow {
+    filter: drop-shadow(0 0 10px #ffffff);
+}*/
+
+
+ /*@media (max-width: 599px) and (min-width: 300px) {
+    
+    .logo {
+      max-height: 150px; 
+      margin-top: 2vh; 
+    }
+    #bear {
+      width: 90%; 
+      margin-top: 5vh; 
+    }
+  }*/
+
+
+
+
+/*@media (max-width: 599px) {
+
+#logo {
+    display: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+  
+    background-color: rgb(42, 53, 70);  
+    margin: 0;
+    padding: 0;
+    height: 88vh;
+    overflow-x: hidden;
+    transition: background-color 3s ease;
+  
+}
+
+.container {
+   display: flex;
+   position: relative;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   width: 100%;
+   transition: opacity 3s ease;
+}
+
+.logo-phone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-phone {
+    filter: drop-shadow(0 0 5px #ffffff77);
+    justify-self: center;
+    align-self: center;
+    width: 97%;
+    opacity: .5;
+}
+
+.bear {
+    display: flex;
+    justify-content: center;
+    margin-top: 9vh;
+}
+
+#bear {
+    width: 90%;
+    filter: drop-shadow(0 0 10px #ffffff)
+
+    
+}
+
+.glow {
+    filter: drop-shadow(0 0 10px #ffffff); 
+}
+
+.iglogophone {
+    height: 100%;
+    opacity: 0;
+}
+
+.my-alert {
+    font-size: 16px;
+    color: red;
+    font-weight: bold;
+}
+
+.footer-desktop {
+    display: none;
+}
+.footer-phone {
+    position: fixed;
+    background-color: rgb(42, 53, 70);
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    justify-content:space-evenly;
+    color:rgba(255, 255, 255, 0.668); 
+    font-family:'Courier New', Courier, monospace;
+    font-size: 104%;
+    width: 100%;
+    bottom: 0;
+
+    
+}
+.footer-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    color:rgba(255, 255, 255, 0.487); 
+    transition: opacity 3s ease;
+    padding-right: 4vw;
+    padding-left: 4vw;
+}
+.left-phone {
+    display: flex;
+    align-items: end; 
+    width: auto;
+    padding: 0;
+    margin-bottom: 1.5vh;
+    opacity: 1;
+}
+
+.right-phone {
+    display: flex;
+    flex-wrap: wrap; 
+    padding: 0;
+    margin: 0;
+    max-width: 200px;
+    margin-bottom: 1.5vh;
+    text-align: right;
+    align-items: end;
+    opacity: 1;
+}
+
+
+
+.ig-logo-phone {
+    height: 100%;
+    opacity: 1;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none; 
+    transition: background-color 3s ease;
+    pointer-events: none; 
+    z-index: 999;
+}
+
+}
+
+
+@media screen and (orientation:landscape) and (max-width:800px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .container {
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        
+        
+        margin: 0;
+        padding: 0;
+       
+        
+    }
+
+    #logo {
+    
+        position: fixed;
+        top: 0;
+        width: 750px;
+
+        margin-top: 0vw;
+        padding: -10;
+        z-index: -100;
+        opacity: .5;
+        filter: drop-shadow(0 0 10px #ffffff6e)
+        
+    }
+    
+   .bear {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+
+    #bear {
+        opacity: 1;
+        margin-top: 17vw;
+        left: 0;
+        right: 0;
+        
+        width: 60%;
+        filter: drop-shadow(0 0 15px #ffffff76);
+    }
+}
+
+*/

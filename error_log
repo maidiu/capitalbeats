@@ -1,0 +1,41 @@
+[01-Apr-2024 03:19:18 UTC] PHP Warning:  Undefined array key "url" in /home2/jnafsxmy/public_html/wp-content/plugins/wpforms-lite/src/Forms/IconChoices.php on line 127
+[01-Apr-2024 03:19:18 UTC] PHP Warning:  Undefined array key "path" in /home2/jnafsxmy/public_html/wp-content/plugins/wpforms-lite/src/Forms/IconChoices.php on line 128
+[04-Apr-2024 01:32:53 UTC] Cron reschedule event error for hook: nfd_module_installer_plugin_install_cron, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"thirty_seconds","args":[],"interval":30}
+[04-Apr-2024 01:32:53 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[04-Apr-2024 01:33:57 UTC] PHP Fatal error:  Uncaught TypeError: array_key_exists(): Argument #2 ($array) must be of type array, WP_Error given in /home2/jnafsxmy/public_html/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-plugin.php:88
+Stack trace:
+#0 /home2/jnafsxmy/public_html/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-plugin.php(88): array_key_exists('jetpack', Object(WP_Error))
+#1 /home2/jnafsxmy/public_html/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-manager.php(2057): Automattic\Jetpack\Connection\Plugin->is_only()
+#2 /home2/jnafsxmy/public_html/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-manager.php(1720): Automattic\Jetpack\Connection\Manager->disconnect_site(true, false)
+#3 /home2/jnafsxmy/public_html/wp-content/plugins/jetpack/class.jetpack.php(2981): Automattic\Jetpack\Connection\Manager->remove_connection(true)
+#4 /home2/jnafsxmy/public_html/wp-content/plugins/jetpack/class.jetpack.php(2953): Jetpack::disconnect()
+#5 /home2/jnafsxmy/public_html/wp-includes/class-wp-hook.php(324): Jetpack::plugin_deactivation(false)
+#6 /home2/jnafsxmy/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#7 /home2/jnafsxmy/public_html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#8 /home2/jnafsxmy/public_html/wp-admin/includes/plugin.php(816): do_action('deactivate_jetp...', false)
+#9 /home2/jnafsxmy/public_html/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-installer/includes/Services/PluginInstaller.php(387): deactivate_plugins('jetpack/jetpack...')
+#10 /home2/jnafsxmy/public_html/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-installer/includes/Tasks/PluginDeactivationTask.php(87): NewfoldLabs\WP\Module\Installer\Services\PluginInstaller::deactivate('jetpack')
+#11 /home2/jnafsxmy/public_html/wp-content/plugins/bluehost-wordpress-plugin/vendor/newfold-labs/wp-module-installer/includes/TaskManagers/PluginDeactivationTaskManager.php(69): NewfoldLabs\WP\Module\Installer\Tasks\PluginDeactivationTask->execute()
+#12 /home2/jnafsxmy/public_html/wp-includes/class-wp-hook.php(324): NewfoldLabs\WP\Module\Installer\TaskManagers\PluginDeactivationTaskManager->deactivate()
+#13 /home2/jnafsxmy/public_html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#14 /home2/jnafsxmy/public_html/wp-includes/plugin.php(565): WP_Hook->do_action(Array)
+#15 /home2/jnafsxmy/public_html/wp-cron.php(191): do_action_ref_array('nfd_module_inst...', Array)
+#16 {main}
+  thrown in /home2/jnafsxmy/public_html/wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-connection/src/class-plugin.php on line 88
+[04-Apr-2024 01:36:05 UTC] Cron reschedule event error for hook: nfd_module_installer_plugin_install_cron, Error code: invalid_schedule, Error message: Event schedule does not exist., Data: {"schedule":"thirty_seconds","args":[],"interval":30}
+[04-Apr-2024 12:15:06 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 13:19:18 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 13:25:26 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 13:25:26 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 13:28:29 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 13:31:18 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 13:38:55 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 14:26:48 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 14:59:06 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 15:07:50 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 15:10:17 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 15:13:42 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 15:15:21 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 15:19:40 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 15:56:39 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2
+[04-Apr-2024 16:01:48 America/Boise] PHP Warning:  Undefined array key "h-captcha-response" in /home2/jnafsxmy/public_html/verify-captcha.php on line 2

@@ -1,0 +1,485 @@
+@media screen and (max-width: 599px) {
+    /* { border: 1px solid rgb(255, 253, 253); }*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #26064b;  
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 88vh;
+    perspective: 1000px;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    overscroll-behavior: none;
+    position: relative;
+
+    
+}
+
+.sidebar {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    width: 100%;
+    top: 0;
+    margin-top: 0px;
+    margin-bottom: 2vh;
+    max-height: 35vh;
+    background-color: #26064b;  
+}
+
+.bear-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.bearwhite {
+    display: flex;
+    
+    margin-top: 7vh;
+    margin-bottom: 1vh;
+
+    width: 60%;
+    justify-self: center;
+    align-self: center;
+}
+
+.bearwhite:active {
+    size: 98%;
+}
+@keyframes sizzle {
+    0% {
+        filter: drop-shadow(0 0 10px #fdfcfc7d);
+    }
+    50% {
+        filter: drop-shadow(0 0 30px #fdfcfc7d);
+    }
+    100% {
+        filter: drop-shadow(0 0 10px #fdfcfc7d);
+    }
+}
+
+.glow {
+    animation: sizzle 1s infinite alternate;
+    filter: drop-shadow(0 0 10px #fdfcfc7d);
+}
+
+
+.main {
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 22vh;
+    /*overflow: auto;*/
+    
+}
+.customer {
+    width: 90vw;
+}
+.texts {
+    display: flex;
+    flex-direction: column;
+
+    align-items: start;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    text-align:justify;
+    text-justify:left;
+    font-weight: 100;
+    overscroll-behavior: contain;
+   /*overflow: auto;*/
+    
+}
+
+#about-section {
+    padding-bottom: 8vh;
+
+} 
+
+#inquiries-section {
+
+    padding-bottom: 7vh;
+}
+#contact-section {
+    text-align: center;
+    padding-bottom: 3vh;
+}
+
+
+
+
+
+
+
+
+.background-logo {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 35%;
+    bottom: 30%;
+    transform: translateZ(-100px);
+    opacity: 0;
+    animation: fadeIn 3s forwards 2.5s, pulse 20s infinite 6.5s;
+    z-index: -1;
+}
+
+.background-logo-phone {
+    position: absolute;
+    z-index: -1000;
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    opacity: 0;
+    top: 67%;
+}
+
+.bg-logo-appear {
+    opacity: .75;
+   
+    transition: opacity 3s ease;
+}
+
+.shrink-bear {
+    width: 30vw;
+
+    margin-top: 4vh;
+    margin-bottom: -.5vh;
+   
+}
+
+.shrink-sidebar {
+    height: 20vh;
+    position: fixed;
+    z-index: 100;
+    transition: height 4s linear;
+   
+}
+
+.dim-bg-logo {
+    opacity: .15;
+    top: 50%;
+    transition: top 4s linear;
+    transition: opacity 2s ease;
+}
+
+
+
+.main-header {
+    display: none;
+}
+.footer-container {
+    display: none;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: 0;
+    height: 7vh;
+    width: 100%;
+    background-color: #26064b;  
+    color:rgba(255, 255, 255, 0.668); 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    z-index: 9999; 
+}
+
+
+
+
+
+.footer-text-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    /*border: red solid 2px;*/
+}
+
+.left-phone {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    padding-left: 4.5vw;
+    padding-bottom: 1vh;
+    align-self: end;
+    text-align:left;
+    justify-self: flex-end;
+    opacity: 0;
+    /*border: yellow solid 2px;*/
+}
+
+.right-phone {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    padding-right: 4.5vw;
+    padding-bottom: 1vh;
+    align-self: end;
+    text-align: right;
+    opacity: 0;
+    /*border: magenta solid 2px;*/
+}
+
+.iglogophone {
+    height: 50px;
+    opacity: 0;
+    /*border: orange solid 2px;*/
+}
+
+.iglogo {
+    display: none;
+    width: 10px;
+}
+
+.appear {
+    opacity: .8;
+    transition: opacity 2s ease;
+}
+
+.dim {
+    opacity: .1;
+    transition: opacity 1s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0;
+    
+    margin-bottom: 2vh;
+}
+
+
+button {
+    background-color: rgba(240, 248, 255, 0);
+    width: auto;
+    height: 5vh;
+  
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    outline: none;
+    font-size: 1.3rem;
+    padding: 0px;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    opacity: 0;
+}
+
+button:active {
+    transform: translateY(.1px) scale(1.02); 
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.3) inset; 
+}
+
+/*#hannah {
+    border-radius: 2%;
+    border: 2px solid white;
+}*/
+
+#hannah {
+    width: 95vw;
+}
+
+.contact-links {
+    color: white;
+}
+
+.contact-links:hover {
+    font-size: 102%;
+}
+
+
+
+
+
+input[type="text"] {
+    flex-shrink: 0;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    
+   
+    color: white;
+    font-family: 'Impact';
+    width: calc(100% - 4.5vw);
+    overflow-y: auto; 
+    
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    resize: vertical; 
+    min-height: 50px; 
+}
+
+input[type="text"]:focus {
+    outline: rgb(255, 255, 255) auto 3px;
+}
+
+input[type="text"]::placeholder {
+    color:#9c9c9c;
+    font-style: italic;
+}
+
+.text-area {
+    width: 200px; 
+    height: 100px; 
+    resize: vertical; 
+    overflow-y: auto; 
+}
+
+
+#customAlert {
+    display: none;
+}
+
+#submit {
+    display: block;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    width: 110px;
+    font-size: 150%;
+    font-family: 'Impact';
+    color: black;
+    outline: none;
+    border-color: #ffffff00;
+    border-width: 2px;
+    border-radius: 4px;
+    border-style: solid;
+    box-shadow: none;
+    opacity: 1;
+    cursor: pointer;
+    margin-top: 2vh;
+    
+}
+
+
+#submit:active {
+    transform: translateY(.1px) scale(0.98);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+
+#customAlert {
+    position: absolute;
+    display: none;
+
+    width: 100vw;
+    height: 100vh;
+    z-index: 400;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.843);
+    justify-content: center;
+    align-items: center;
+}
+
+#custom-alert-box {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 500;
+    margin-bottom: 10vh;
+    height: 200px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.347);
+    border-radius: 10px;
+    border: rgba(255, 255, 255, 0.852) solid 2px;
+    
+    font-family: 'Impact';
+}
+
+#custom-alert-box-text {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.876);
+}
+#custom-alert-close {
+    display: block;
+    border: #ffffff00 solid 2px;
+    border-radius: 4px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.818);
+    color: rgb(0, 0, 0);
+    z-index: 1000;
+    font-weight: 500;
+    opacity: 1;
+    width: 110px;
+    height: 40px;
+    padding: 0;
+}
+
+#custom-alert-close:hover {
+    font-size: 150%;
+    transform: scale(1.02);
+    background-color: #313131;
+
+}
+
+#custom-alert-close:active {
+    transform: translateY(.1px) scale(0.98);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+}
+
+/*@media screen and (max-width: 380px) {
+    button {
+        margin-right: 1.5vw;
+        margin-left: 1.5vw;
+    }
+}
+
+@media screen and (max-width: 363px) {
+    .right {
+        display: none;
+    }
+    .footerTextContainer {
+        justify-content: right;
+    }
+}*/
