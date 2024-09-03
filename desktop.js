@@ -37,7 +37,7 @@ const items = [
                   aboutButton, 
                   valuesButton, 
                   inquiriesButton, 
-                  contactButton, 
+                  //contactButton, 
                   igLogoPhone, 
                   leftPhone, 
                   rightPhone]
@@ -45,23 +45,23 @@ const items = [
 function buttonsAppearDesktop() {
     
         aboutButton.classList.add('appear')
-     setTimeout(function() {
-        valuesButton.classList.add('appear')}, 300)
-     setTimeout(function() {
-        inquiriesButton.classList.add('appear')}, 600)
-     setTimeout(function() {
-        contactButton.classList.add('appear')}, 900)
+        setTimeout(function() {
+            inquiriesButton.classList.add('appear')}, 300)
+         setTimeout(function() {
+            valuesButton.classList.add('appear')}, 600)
+     /*setTimeout(function() {
+        contactButton.classList.add('appear')}, 900)*/
 }
 
 function buttonsAppear() {
     
         aboutButton.classList.add('appear')
      setTimeout(function() {
-        valuesButton.classList.add('appear')}, 300)
+        inquiriesButton.classList.add('appear')}, 300)
      setTimeout(function() {
-        inquiriesButton.classList.add('appear')}, 600)
-     setTimeout(function() {
-        contactButton.classList.add('appear')}, 900)
+        valuesButton.classList.add('appear')}, 600)
+     /*setTimeout(function() {
+        contactButton.classList.add('appear')}, 900)*/
 }
 
 function restAppears() {
@@ -205,7 +205,7 @@ function unShrink () {
 }
 
 function showSection(section) {
-   [about, values, inquiries, contact].forEach(elem => {
+   [about, values, inquiries, /*contact*/].forEach(elem => {
        if (elem !== section) {
            elem.classList.add('hidden');
        }
@@ -222,7 +222,7 @@ function showSection(section) {
 aboutButton.addEventListener('click', () => shrinkAndShow(about));
 inquiriesButton.addEventListener('click', () => shrinkAndShow(inquiries));
 valuesButton.addEventListener('click', () => shrinkAndShow(values));
-contactButton.addEventListener('click', () => shrinkAndShow(contact));
+//contactButton.addEventListener('click', () => shrinkAndShow(contact));
 
 
 
