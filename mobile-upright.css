@@ -116,24 +116,17 @@ body {
 
 #about-section {
     padding-bottom: 8vh;
+
+
 } 
 
 #inquiries-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
     padding-bottom: 7vh;
 }
 #contact-section {
     text-align: center;
     padding-bottom: 3vh;
-}
-#alternate {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-justify: center;
 }
 
 

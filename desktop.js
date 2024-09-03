@@ -42,7 +42,6 @@ const items = [
                   rightPhone]
 
 function buttonsAppearDesktop() {
-    
         aboutButton.classList.add('appear')
         setTimeout(function() {
             inquiriesButton.classList.add('appear')}, 300)
@@ -53,8 +52,7 @@ function buttonsAppearDesktop() {
 }
 
 function buttonsAppear() {
-    
-        aboutButton.classList.add('appear')
+    aboutButton.classList.add('appear')
      setTimeout(function() {
         inquiriesButton.classList.add('appear')}, 300)
      setTimeout(function() {
@@ -180,14 +178,10 @@ function shrinkAndShow(section) {
     }
 }
 
-
-
-
 function shrink () {
     bgLogoPhone.classList.add('dim-bg-logo')
     bearWhite.classList.add('shrink-bear')
     sidebar.classList.add('shrink-sidebar')
-    
 }
 
 function unShrink () {
