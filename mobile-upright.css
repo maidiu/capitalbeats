@@ -102,14 +102,13 @@ body {
     flex-direction: column;
 
     align-items: start;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-weight: 400;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: white;
     padding-left: 5vw;
     padding-right: 5vw;
     text-align:justify;
     text-justify:left;
-   
+    font-weight: 100;
     overscroll-behavior: contain;
    /*overflow: auto;*/
     
@@ -117,21 +116,18 @@ body {
 
 #about-section {
     padding-bottom: 8vh;
-
 } 
 
 #inquiries-section {
     display: flex;
-    justify-content: center;
-    text-align: center;
-
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 7vh;
 }
 #contact-section {
     text-align: center;
     padding-bottom: 3vh;
 }
-
 #alternate {
     display: flex;
     flex-direction: column;
@@ -139,6 +135,7 @@ body {
     align-items: center;
     text-justify: center;
 }
+
 
 
 

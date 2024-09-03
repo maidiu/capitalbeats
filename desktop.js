@@ -35,9 +35,8 @@ const customAlert = document.getElementById('customAlert')
 
 const items = [
                   aboutButton, 
-                  valuesButton, 
-                  inquiriesButton, 
-                  //contactButton, 
+                  inquiriesButton,
+                  valuesButton,
                   igLogoPhone, 
                   leftPhone, 
                   rightPhone]
@@ -139,7 +138,7 @@ function flickerSet(finalOpacityStr) {
 
 document.addEventListener('DOMContentLoaded', function() {
     let windowWidth = window.innerWidth;
-    if (windowWidth > 599){
+    if (windowWidth > 599) {
    //setTimeout(function() {bearWhite.classList.add('appear')}, 1000);
    flickerSet('1')
    setTimeout(buttonsAppear, 1600)
@@ -149,9 +148,10 @@ document.addEventListener('DOMContentLoaded', function() {
     } else if (windowWidth <= 599) {
         setTimeout(buttonsAppear, 1600)
         setTimeout(restAppears, 1600)
-    }
-
-})
+        [about, values, inquiries].forEach(section => {
+            section.classList.add('hidden');
+    })
+}})
 
 bearWhite.addEventListener('mouseover', function() {
    bearWhite.style.transform = 'scale(1.05)'
@@ -192,7 +192,7 @@ function shrink () {
 
 function unShrink () {
     if (isBearShrunk) {
-    [about, values, inquiries, contact].forEach(elem => {
+    [about, values, inquiries].forEach(elem => {
         if (!elem.classList.contains('hidden')) {
         elem.classList.add('hidden')}
     })
@@ -205,7 +205,7 @@ function unShrink () {
 }
 
 function showSection(section) {
-   [about, values, inquiries, /*contact*/].forEach(elem => {
+   [about, values, inquiries].forEach(elem => {
        if (elem !== section) {
            elem.classList.add('hidden');
        }
